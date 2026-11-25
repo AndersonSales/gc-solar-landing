@@ -1,7 +1,33 @@
 export default function App() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-sky-50">
-      <h1 className="text-3xl font-semibold text-sky-700">GC Solar - 👍 </h1>
+    <main className="min-h-screen bg-white font-sans">
+      <section className="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 py-24 text-center">
+        <span className="text-sm font-semibold uppercase tracking-wider text-brand-700">
+          Cianorte (PR) e região
+        </span>
+
+        <h1 className="text-4xl font-bold text-gray-900 md:text-5xl">
+          Energia solar para casa, comércio e indústria
+        </h1>
+
+        <p className="max-w-xl text-lg text-gray-600">
+          Teste do tema: fundo branco, azul claro na identidade e botão de destaque.
+        </p>
+
+        <a
+          href="#simulacao"
+          className="rounded-lg bg-accent-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-accent-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-200"
+        >
+          Faça sua simulação
+        </a>
+
+        <div className="mt-8 w-full rounded-2xl bg-brand-50 p-6 text-left">
+          <h2 className="text-xl font-semibold text-brand-700">Bloco de exemplo</h2>
+          <p className="mt-2 text-gray-600">
+            Este bloco usa o azul claro de apoio para validar contraste e espaçamento.
+          </p>
+        </div>
+      </section>
     </main>
   )
 }
