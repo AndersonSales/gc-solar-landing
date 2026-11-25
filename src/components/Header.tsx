@@ -6,9 +6,15 @@ export default function Header() {
 
     return (
         <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
-            <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-                <a href="#" className="text-lg font-bold text-brand-700">
-                    GC Solar
+            <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
+                <a href="#" aria-label="GC Solar - Início" className="flex items-center">
+                    <img
+                        src="/logo-gc-solar.png"
+                        alt="GC Solar - Investimento fotovoltaico"
+                        width={250}
+                        height={250}
+                        className="h-14 w-auto md:h-16"
+                    />
                 </a>
 
                 {/* Menu para desktop */}
