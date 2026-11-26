@@ -1,21 +1,34 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Sobre from './components/sections/Sobre'
-import SimuleSeuProjeto from './components/sections/SimuleSeuProjeto'
 import Servicos from './components/sections/Servicos'
 import Depoimentos from './components/sections/Depoimentos'
 import Contato from './components/sections/Contato'
+import Simulador from './pages/Simulador'
 
-export default function App() {
+function Home() {
   return (
-    <div className="min-h-screen bg-white font-sans text-gray-800">
+    <>
       <Header />
       <main>
         <Sobre />
-        <SimuleSeuProjeto />
         <Servicos />
         <Depoimentos />
         <Contato />
       </main>
-    </div>
+    </>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <div className="min-h-screen bg-white font-sans text-gray-800">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/simular" element={<Simulador />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
