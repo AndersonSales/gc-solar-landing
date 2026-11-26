@@ -15,6 +15,7 @@ export default function SimuleSeuProjeto() {
             <div className="mx-auto mt-10 max-w-5xl overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm">
                 <iframe
                     title="Simulador de economia GC Solar"
+                    //src="https://simulador.luvik.com.br/simulador?k=bmFzdWRoaXUxM2hhc2RhczY1NDM2MjE3NDQ0OTI1NDQ"
                     src="https://simulador.luvik.com.br/simulador?k=bmFzdWRoaXUxM2hhc2RhczY1NDM2MjE3NDQ0OTI1NDQ"
                     loading="lazy"
                     className="block h-[1000px] w-full border-0 md:h-[1000px] max-md:h-[1400px]"
