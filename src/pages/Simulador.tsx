@@ -17,6 +17,14 @@ export default function Simulador() {
                         Preencha a simulação com seu consumo de energia. Os valores apresentados são estimativas e a equipe da
                         GC Solar pode detalhar o projeto com você.
                     </p>
+                    <a
+                        href={SIMULADOR_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-6 inline-block rounded-lg bg-accent-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-accent-700 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent-200"
+                    >
+                        Abrir simulador em página completa
+                    </a>
                 </div>
 
                 <div className="mx-auto mt-8 max-w-5xl overflow-hidden rounded-2xl border border-brand-100 bg-white shadow-sm">
